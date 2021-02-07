@@ -1,0 +1,404 @@
+/*
+
+TUNGSTEN ROUNDED
+font-family: "Tungsten Rounded A", "Tungsten Rounded B";
+font-style: normal;
+font-weight: 400;
+
+for bold
+font-weight: 700;
+
+WHITNEY
+font-family: "Whitney A", "Whitney B";
+font-style: normal;
+font-weight: 400;
+
+for bold
+font-weight: 700;
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: rgb(235, 179, 70);
+  font-family: 'Whitney A', 'Whitney B';
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  overflow: auto;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Tungsten Rounded A', 'Tungsten Rounded B';
+  font-style: normal;
+  font-weight: 700;
+  color: rgb(235, 179, 70);
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  padding: 20px;
+  background-color: rgb(197, 67, 89);
+  background-image: url(images/aisling.jpg);
+  background-repeat: no-repeat;
+  background-color: rgb(197, 67, 89);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+header {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+.name {
+  font-size: 15rem;
+  line-height: 0.75;
+}
+
+.first-name {
+  letter-spacing: 2px;
+}
+
+.content {
+  height: 100%;
+  border: 3px solid rgb(235, 179, 70);
+  display: grid;
+  grid-template-columns: 10px 25px 1fr auto 300px 25px 10px;
+  grid-template-rows: 10px 10vh 10vh auto 10vh 35vh 105px 10px;
+}
+
+.about {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 6;
+  grid-row-end: 7;
+  width: 387px;
+}
+
+.about p {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  color: #fff;
+}
+
+.contact {
+  margin-top: 40px;
+}
+
+.contact a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.subheader {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+  border-top: 3px solid white;
+  padding-top: 21px;
+}
+
+.nav {
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  height: 68px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 3px solid rgb(235, 179, 70);
+  border-right: none;
+  align-self: flex-end;
+}
+
+.nav-link {
+  font-family: 'Tungsten Rounded A', 'Tungsten Rounded B';
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  letter-spacing: 3px;
+  padding: 10px;
+}
+
+.nav-link:hover {
+  background-color: rgb(235, 179, 70);
+}
+
+.social {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 7;
+  grid-row-end: 7;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.social-link {
+  display: block;
+}
+
+.social-link + .social-link {
+  margin-top: 10px;
+}
+
+.social-link svg {
+  fill: #fff;
+}
+
+.demo-player {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 7;
+  grid-row-end: 7;
+  max-width: 63%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.play-button {
+  padding: 0px;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(235, 179, 70);
+}
+
+.play-button .icon {
+  border: 0;
+  background: transparent;
+  box-sizing: border-box;
+  width: 0;
+  height: 20px;
+  opacity: 0.6;
+  border-color: transparent transparent transparent #fff;
+  transition: 100ms all ease;
+  cursor: pointer;
+
+  border-style: solid;
+  border-width: 10px 0 10px 16px;
+}
+
+.play-button.paused .icon {
+  border-style: double;
+  border-width: 0px 0 0px 16px;
+}
+
+.play-button:hover .icon {
+  border-color: transparent transparent transparent #fff;
+}
+
+@media (max-width: 1550px) {
+  .content {
+    /* grid-template-columns: 50% 50%; */
+  }
+
+  .name {
+    font-size: 12rem;
+    margin-top: 35px;
+  }
+
+  .content {
+    grid-template-rows: 10px 10vh 10vh auto 10vh 41vh 105px 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .about {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    /* grid-row-start: 6;
+    grid-row-end: 7; */
+    width: auto;
+    margin-right: 15vw;
+  }
+}
+
+@media (max-width: 620px) {
+  .name {
+    font-size: 10rem;
+  }
+  .demo-player {
+    max-width: calc(100% - 40px);
+  }
+}
+
+@media (max-width: 525px) {
+  html {
+    font-size: 15px;
+  }
+
+  .about {
+    margin-right: 5vw;
+  }
+
+  .content {
+    grid-template-rows: 10px 10vh 10vh auto 10vh 1fr 105px 10px;
+  }
+}
